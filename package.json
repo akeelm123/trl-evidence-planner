@@ -1,0 +1,20 @@
+{
+  "name": "trl-evidence-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An evidence-led Technology Readiness Level calculator for product development teams.",
+  "author": "Akeel Munshi",
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.1"
+  }
+}

@@ -1,5 +1,5 @@
 # TRL Evidence Planner
-trl-evidence-planner - Testing updates 
+trl-evidence-planner
 
 An interactive Technology Readiness Level calculator for product development teams. It helps teams assess TRL 1 to TRL 9 through evidence, testing conditions and maturity gates rather than selecting a level from a definition alone.
 
@@ -167,6 +167,15 @@ npm --version
 
 Open Terminal and move into the project folder:
 
+```bash
+cd "/Users/akeelmunshi/Documents/Jobs/newsletter/trl-calculator"
+```
+
+Install the project dependency:
+
+```bash
+npm install
+```
 
 Start the development server:
 
@@ -201,6 +210,74 @@ npm run preview
 ```
 
 ## Deploy to Vercel
+
+### Deploy from GitHub
+
+1. Push this project to a GitHub repository.
+2. Sign in at [vercel.com](https://vercel.com/) using GitHub.
+3. Select **Add New → Project**.
+4. Import the `trl-evidence-planner` repository.
+5. Vercel should detect **Vite** as the framework.
+6. Confirm these settings:
+
+   ```text
+   Install command: npm install
+   Build command: npm run build
+   Output directory: dist
+   ```
+
+7. Select **Deploy**.
+8. When the build finishes, Vercel will provide a public address ending in `.vercel.app`.
+
+Every later push to the connected production branch triggers a fresh Vercel deployment.
+
+### Optional deployment with the Vercel CLI
+
+Install the command-line tool:
+
+```bash
+npm install --global vercel
+```
+
+Sign in and create a preview deployment:
+
+```bash
+vercel
+```
+
+Publish to production:
+
+```bash
+vercel --prod
+```
+
+## Deploy with GitHub Pages
+
+The included workflow publishes the repository as a static GitHub Pages site.
+
+1. Create or choose a GitHub repository.
+2. Place the contents of this directory at the repository root.
+3. Push the files to the `main` branch.
+4. In the repository, open **Settings → Pages**.
+5. Under **Build and deployment**, select **GitHub Actions** as the source.
+6. Open the **Actions** tab and confirm that the `Deploy TRL Evidence Planner to GitHub Pages` workflow completes.
+7. The public address will normally follow this pattern:
+
+   ```text
+   https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY-NAME/
+   ```
+
+Every later push to `main` automatically republishes the site.
+
+## Updating the guide
+
+### Change TRL content
+
+Edit the relevant object in the `levels` array in `app.js`. Keep each claim consistent with the maturity boundary for that level.
+
+### Change phase guidance
+
+Edit `phaseGuidance` in `app.js`. The final Project Map combines this phase material with evidence from the selected TRL.
 
 ### Change the design
 

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-led Technology Readiness Level calculator for product development teams.">
+  <title>TRL Evidence Planner | TCI™</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--
+THESIS: A TRL is an evidence-backed judgement, not a score picked from a list; this surface refuses the usual reference-table layout.
+OWN-WORLD: TCI Midnight Navy, Warm Ivory and Amber Gold shape a technical evidence ledger with connected maturity stops.
+STORY: Select a level and phase, inspect the proof expected, mark what exists, then leave with an ordered route to the next level.
+FIRST VIEWPORT: A dark decision header holds the nine-stage rail; the selected-level dossier and next-level decision sit directly below.
+FORM: Operate mode, grounded structure 6, split evidence ledger with a persistent next-step map; seed 02ba909e.
+-->
+  <a class="skip-link" href="#workspace">Skip to calculator</a>
+  <header class="app-header">
+    <div class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <div>
+        <p>Transformation Confidence Index™</p>
+        <strong>TRL evidence planner</strong>
+      </div>
+    </div>
+    <button class="quiet-button" id="resetButton" type="button">Reset evidence</button>
+  </header>
+
+  <main id="workspace">
+    <section class="decision-deck" aria-labelledby="pageTitle">
+      <div class="decision-copy">
+        <p class="kicker">Technology readiness</p>
+        <h1 id="pageTitle">What can the evidence support today?</h1>
+        <p>Select the maturity level that best matches the technology, then test the claim against the records, environment and milestones expected at that stage.</p>
+      </div>
+
+      <fieldset class="phase-control">
+        <legend>Current development phase</legend>
+        <div class="segmented" id="phaseSelector">
+          <button type="button" data-phase="research">Research</button>
+          <button type="button" data-phase="prototyping" aria-pressed="true">Prototyping</button>
+          <button type="button" data-phase="commercialisation">Commercialisation</button>
+        </div>
+      </fieldset>
+
+      <div class="trl-rail-wrap">
+        <div class="rail-labels"><span>Basic research</span><span>Operational proof</span></div>
+        <div class="trl-rail" id="trlRail" role="radiogroup" aria-label="Technology Readiness Level"></div>
+      </div>
+    </section>
+
+    <section class="stage-banner" aria-live="polite">
+      <div class="stage-number"><span>TRL</span><strong id="levelNumber">4</strong></div>
+      <div class="stage-statement">
+        <p id="stageFamily">Technology development</p>
+        <h2 id="levelTitle">Component validated in a laboratory</h2>
+        <p id="levelDefinition"></p>
+      </div>
+      <div class="decision-chip">
+        <span>Next decision</span>
+        <strong id="nextDecision"></strong>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="evidence-ledger">
+        <div class="section-heading">
+          <div>
+            <p class="kicker dark">Evidence review</p>
+            <h2>Build the maturity case</h2>
+          </div>
+          <div class="completion" aria-live="polite">
+            <strong id="completionValue">0%</strong>
+            <span>evidence checked</span>
+          </div>
+        </div>
+
+        <div class="evidence-progress" aria-hidden="true"><span id="completionBar"></span></div>
+
+        <section class="ledger-section" aria-labelledby="documentationTitle">
+          <div class="ledger-heading">
+            <span class="section-symbol document-symbol" aria-hidden="true"></span>
+            <div><h3 id="documentationTitle">Required documentation</h3><p>Records that make the maturity claim reviewable.</p></div>
+          </div>
+          <div class="checklist" id="documentationList"></div>
+        </section>
+
+        <section class="ledger-section" aria-labelledby="environmentTitle">
+          <div class="ledger-heading">
+            <span class="section-symbol environment-symbol" aria-hidden="true"></span>
+            <div><h3 id="environmentTitle">Testing environment</h3><p id="environmentSummary"></p></div>
+          </div>
+          <div class="environment-record" id="environmentRecord"></div>
+        </section>
+
+        <section class="ledger-section" aria-labelledby="milestonesTitle">
+          <div class="ledger-heading">
+            <span class="section-symbol milestone-symbol" aria-hidden="true"></span>
+            <div><h3 id="milestonesTitle">Risk-mitigation milestones</h3><p>Decision points that should close material uncertainty.</p></div>
+          </div>
+          <div class="checklist" id="milestoneList"></div>
+        </section>
+
+        <section class="ledger-section" aria-labelledby="pitfallsTitle">
+          <div class="ledger-heading">
+            <span class="section-symbol pitfall-symbol" aria-hidden="true">!</span>
+            <div><h3 id="pitfallsTitle">Common pitfalls</h3><p>Patterns that often overstate readiness at this level.</p></div>
+          </div>
+          <ul class="pitfall-list" id="pitfallList"></ul>
+        </section>
+      </div>
+
+      <aside class="project-map" aria-labelledby="mapTitle">
+        <div class="map-header">
+          <p class="kicker">Project map</p>
+          <h2 id="mapTitle">Route to TRL <span id="targetLevel">5</span></h2>
+          <p id="mapIntro"></p>
+        </div>
+        <ol class="next-steps" id="nextSteps"></ol>
+        <div class="gate-box">
+          <span>Exit evidence</span>
+          <p id="exitEvidence"></p>
+        </div>
+        <div class="map-actions">
+          <button class="primary-button" type="button" id="copyButton">Copy project summary</button>
+          <button class="secondary-button" type="button" id="printButton">Print review</button>
+        </div>
+        <p class="save-note" id="saveNote">Checklist progress is saved on this device.</p>
+      </aside>
+    </section>
+
+    <section class="method-note" aria-labelledby="methodTitle">
+      <div>
+        <p class="kicker dark">Assessment boundary</p>
+        <h2 id="methodTitle">Guidance supports a review. It does not issue certification.</h2>
+      </div>
+      <p>NASA defines TRLs as a nine-level maturity scale. The evidence needed for formal acceptance varies by agency, sector, product and approving authority. Confirm the applicable standard before using this checklist as a certification record.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <strong>Akeel Munshi |</strong> Global technology and transformation executive</p>
+    <p>TRL guidance adapted for product planning. No project data leaves this browser.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

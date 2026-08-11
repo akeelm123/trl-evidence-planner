@@ -1,3 +1,8 @@
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
+
 const levels = [
   {
     level: 1, family: "Basic research", title: "Basic principles observed", decision: "Is there a credible scientific basis?",

@@ -1,7 +1,7 @@
 const levels = [
   {
     level: 1, family: "Basic research", title: "Basic principles observed", decision: "Is there a credible scientific basis?",
-    definition: "Scientific observations are documented and linked to a possible technology concept. Application remains speculative.",
+    definition: "Observations are documented and linked to a possible technology concept. Application remains speculative.",
     environment: ["Analytical or theoretical setting", "Peer or subject-matter review", "No integrated hardware or software expected"],
     documents: ["Research question and intended application", "Literature review and prior-art scan", "Record of observed principles", "Initial assumptions and uncertainty log", "Named technical owner and review route"],
     milestones: ["Independent review confirms the principle is plausible", "Critical unknowns are ranked", "A testable technology concept is framed"],
@@ -20,19 +20,19 @@ const levels = [
   {
     level: 3, family: "Proof of concept", title: "Critical function proved analytically or experimentally", decision: "Did the critical function work?",
     definition: "Analytical studies or experiments show that the concept's key functions can work. Components may still be separate and low fidelity.",
-    environment: ["Controlled laboratory or simulation", "Bench experiments for critical functions", "Data captured against explicit acceptance criteria"],
+    environment: ["Controlled development or simulation", "Bench experiments for critical functions", "Data captured against explicit acceptance criteria"],
     documents: ["Approved proof-of-concept test plan", "Experiment configuration and materials", "Raw results and analysis", "Requirements trace to critical functions", "Updated risk and assumption log"],
     milestones: ["Critical functions meet stated thresholds", "Results are repeatable or independently reviewed", "Architecture for a component-level validation is selected"],
     pitfalls: ["Testing only the easiest function", "Changing acceptance criteria after seeing results", "Confusing a one-off result with repeatability"],
-    exit: "Repeatable proof that the critical functions work and an agreed component configuration for laboratory validation."
+    exit: "Repeatable proof that the critical functions work and an agreed component configuration for development validation."
   },
   {
-    level: 4, family: "Technology development", title: "Component validated in a laboratory", decision: "Do the components work together?",
-    definition: "Basic components are integrated and validated in a controlled laboratory. Fidelity is sufficient to expose important interfaces.",
-    environment: ["Controlled laboratory", "Integrated breadboard or low-fidelity component assembly", "Known inputs, loads and interfaces"],
-    documents: ["Allocated requirements and interface definitions", "Laboratory validation plan", "Configuration record for integrated components", "Test results with anomalies and dispositions", "Preliminary verification cross-reference"],
+    level: 4, family: "Technology development", title: "Component validated in Dev", decision: "Do the components work together?",
+    definition: "Basic components are integrated and validated in a controlled Dev environment. Fidelity is sufficient to expose important interfaces.",
+    environment: ["Controlled development", "Integrated breadboard or low-fidelity component assembly", "Known inputs, loads and interfaces"],
+    documents: ["Allocated requirements and interface definitions", "Development validation plan", "Configuration record for integrated components", "Test results with anomalies and dispositions", "Preliminary verification cross-reference"],
     milestones: ["Critical interfaces operate together", "Material failure modes have owners and treatments", "Representative-environment needs are defined"],
-    pitfalls: ["Calling separately tested components an integrated validation", "Leaving configuration changes unrecorded", "Using laboratory conditions that avoid the hardest interface"],
+    pitfalls: ["Calling separately tested components an integrated validation", "Leaving configuration changes unrecorded", "Using development conditions that avoid the hardest interface"],
     exit: "An integrated component result and an approved plan for validation in a relevant environment."
   },
   {

@@ -36,10 +36,10 @@ const levels = [
     exit: "An integrated component result and an approved plan for validation in a relevant environment."
   },
   {
-    level: 5, family: "Technology development", title: "Component validated in a relevant environment", decision: "Does the technology survive representative conditions?",
-    definition: "The component or breadboard is tested under conditions that materially represent the intended use, including important loads and interfaces.",
+    level: 5, family: "Testing", title: "Component validated in a relevant environment", decision: "Does the technology survive representative conditions?",
+    definition: "The component is tested under conditions that materially represent the intended use, including important loads and interfaces.",
     environment: ["Relevant or high-fidelity simulated environment", "Representative loads, data, interfaces and constraints", "Controlled test with production-like boundary conditions"],
-    documents: ["Relevant-environment definition and rationale", "Updated component design baseline", "Qualification-oriented test plan", "Results mapped to requirements", "Failure analysis and residual-risk record"],
+    documents: ["Relevant-environment definition and rationale", "Updated component design baseline", "Qualification-oriented Test Strategy and Plan", "Results mapped to requirements", "Failure analysis and residual-risk record"],
     milestones: ["Representative conditions and margins are agreed", "Critical performance is demonstrated", "Prototype scope and system interfaces are baselined"],
     pitfalls: ["Calling a convenient environment relevant", "Omitting representative data or operational loads", "Advancing with unresolved interface failures"],
     exit: "Validated component performance in representative conditions and a controlled prototype baseline."
@@ -48,9 +48,9 @@ const levels = [
     level: 6, family: "System demonstration", title: "Prototype demonstrated in a relevant environment", decision: "Can a representative prototype perform as a system?",
     definition: "A representative model or prototype demonstrates the critical technology as part of a system under relevant conditions.",
     environment: ["High-fidelity relevant environment", "Representative prototype and external interfaces", "Operational scenarios with faults and recovery paths"],
-    documents: ["Prototype design and configuration baseline", "System-level demonstration plan", "Interface-control documentation", "Performance, reliability and fault results", "Manufacturing or deployment-readiness assessment"],
+    documents: ["Prototype design and configuration baseline", "System-level demonstration plan", "Interface-control documentation", "Performance, reliability and fault results", "Deployment-readiness assessment"],
     milestones: ["Prototype meets critical system requirements", "Integration and recovery risks are reduced", "Operational demonstration plan and owner are agreed"],
-    pitfalls: ["Demonstrating a subsystem without the critical interfaces", "Treating functional performance as operational suitability", "Ignoring deployment, support or manufacturability evidence"],
+    pitfalls: ["Demonstrating a subsystem without the critical interfaces", "Treating functional performance as operational suitability", "Ignoring deployment, support or development evidence"],
     exit: "A representative prototype that performs in relevant conditions and is ready for operational-environment demonstration."
   },
   {
@@ -65,14 +65,14 @@ const levels = [
   {
     level: 8, family: "Qualification", title: "Actual system completed and qualified", decision: "Has the final system met its acceptance basis?",
     definition: "The actual system is complete and qualified through test and demonstration against its approved requirements and intended use.",
-    environment: ["Qualification and acceptance environments", "Final or production-equivalent configuration", "Approved operational envelope and compliance conditions"],
+    environment: ["Qualification and acceptance environments", "Final or production-equivalent configuration", "Approved operational and compliance conditions"],
     documents: ["Final design and configuration baseline", "Verification and validation record", "Qualification and compliance evidence", "Operations, maintenance and recovery procedures", "Acceptance decision and residual-risk approval"],
     milestones: ["Qualification evidence is complete", "Known limitations and residual risks are accepted", "Operational deployment and monitoring are authorised"],
     pitfalls: ["Qualifying a configuration that differs from the release", "Closing tests without resolving anomalies", "Assuming qualification proves sustained operational performance"],
     exit: "An accepted, qualified system with controlled configuration, operational ownership and authority to deploy."
   },
   {
-    level: 9, family: "Operational proof", title: "Actual system proven in operation", decision: "Does operational evidence sustain the maturity claim?",
+    level: 9, family: "Production Verification", title: "Actual system proven in operation", decision: "Does operational evidence sustain the maturity claim?",
     definition: "The actual system has performed successfully in its intended operational setting and the evidence is drawn from real use.",
     environment: ["Intended operational environment", "Real workload, users, interfaces and support arrangements", "Normal operations plus observed incidents and recovery"],
     documents: ["Operational performance and reliability record", "Incident, problem and recovery evidence", "Benefits or mission-outcome record", "Configuration and change history", "Lessons learned and continuous-improvement backlog"],

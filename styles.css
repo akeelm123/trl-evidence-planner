@@ -134,7 +134,7 @@ h1 { font-family: var(--serif); font-size: clamp(2.45rem, 5vw, 4.9rem); line-hei
 
 .method-note { max-width: 1400px; margin: 0 auto 58px; padding: 30px clamp(20px, 4vw, 54px); display: grid; grid-template-columns: 1fr 1fr; gap: 40px; border-top: 1px solid #bcbdb9; border-bottom: 1px solid #bcbdb9; }
 .method-note > p { color: var(--muted); max-width: 65ch; margin: 0; align-self: end; }
-.method-visual { display: block; overflow: hidden; border: 1px solid #9ba5aa; background: var(--navy); transition: border-color .2s ease-out, transform .2s ease-out; }
+.method-visual { display: block; justify-self: end; width: min(100%, 360px); overflow: hidden; border: 1px solid #9ba5aa; background: var(--navy); transition: border-color .2s ease-out, transform .2s ease-out; }
 .method-visual:hover { border-color: var(--gold); transform: translateY(-2px); }
 .method-visual img { display: block; width: 100%; height: auto; aspect-ratio: 960 / 520; object-fit: cover; }
 footer { padding: 26px clamp(20px, 6vw, 92px); background: var(--navy); color: var(--steel); display:flex; justify-content:space-between; gap:30px; font-size:.78rem; }

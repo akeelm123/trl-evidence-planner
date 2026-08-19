@@ -31,7 +31,7 @@ const levels = [
     definition: "Basic components are integrated and validated in a controlled Dev environment. Fidelity is sufficient to expose important interfaces.",
     environment: ["Controlled development", "Integrated breadboard or low-fidelity component assembly", "Known inputs, loads and interfaces"],
     documents: ["Allocated requirements and interface definitions", "Development validation plan", "Configuration record for integrated components", "Test results with anomalies and dispositions", "Preliminary verification cross-reference"],
-    milestones: ["Critical interfaces operate together", "Material failure modes have owners and treatments", "Representative-environment needs are defined"],
+    milestones: ["Unit tests results visible, CI/CD automation", "Critical interfaces operate together", "Material failure modes have owners and treatments", "Representative-environment needs are defined"],
     pitfalls: ["Calling separately tested components an integrated validation", "Leaving configuration changes unrecorded", "Using development conditions that avoid the hardest interface"],
     exit: "An integrated component result and an approved plan for validation in a relevant environment."
   },
@@ -40,7 +40,7 @@ const levels = [
     definition: "The component is tested under conditions that materially represent the intended use, including important loads and interfaces.",
     environment: ["Relevant or high-fidelity simulated environment", "Representative loads, data, interfaces and constraints", "Controlled test with production-like boundary conditions"],
     documents: ["Relevant-environment definition and rationale", "Updated component design baseline", "Qualification-oriented Test Strategy and Plan", "Results mapped to requirements", "Failure analysis and residual-risk record"],
-    milestones: ["Unit Testing, SIT, UAT and Regression Testing completed and signed off", "Representative conditions and defects documented & agreed", "Critical performance is demonstrated", "Prototype scope and system interfaces are baselined"],
+    milestones: ["Testing	- Functional, integration, performance, compliance", " Implementation - UAT, deployment validation, rollback",  "Maintenance - 	Ongoing regression, monitoring, patch validation", "Representative conditions and defects documented & agreed", "Critical performance is demonstrated", "Prototype scope and system interfaces are baselined"],
     pitfalls: ["Calling a convenient environment relevant", "Omitting representative data or operational loads", "Advancing with unresolved interface failures"],
     exit: "Validated component performance in representative conditions and a controlled prototype baseline."
   },

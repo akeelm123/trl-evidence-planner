@@ -40,7 +40,7 @@ const levels = [
     definition: "The component is tested under conditions that materially represent the intended use, including important loads and interfaces.",
     environment: ["Relevant or high-fidelity simulated environment", "Representative loads, data, interfaces and constraints", "Controlled test with production-like boundary conditions"],
     documents: ["Relevant-environment definition and rationale", "Updated component design baseline", "Qualification-oriented Test Strategy and Plan", "Results mapped to requirements", "Failure analysis and residual-risk record"],
-    milestones: ["Representative conditions and margins are agreed", "Critical performance is demonstrated", "Prototype scope and system interfaces are baselined"],
+    milestones: ["Unit Testing, SIT, UAT and Regression Testing completed and signed off", "Representative conditions and defects documented & agreed", "Critical performance is demonstrated", "Prototype scope and system interfaces are baselined"],
     pitfalls: ["Calling a convenient environment relevant", "Omitting representative data or operational loads", "Advancing with unresolved interface failures"],
     exit: "Validated component performance in representative conditions and a controlled prototype baseline."
   },

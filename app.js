@@ -3,7 +3,7 @@ const levels = [
     level: 1, family: "Basic research", title: "Basic principles observed", decision: "Is there a credible scientific basis?",
     definition: "Observations are documented and linked to a possible technology concept. Application remains speculative.",
     environment: ["Analytical or theoretical setting", "Peer or subject-matter review", "No integrated hardware or software expected"],
-    documents: ["Research question and intended application", "Literature review and systematic check of existing public information to see whether an invention, idea, or technical feature is already known", "Record of observed principles", "Initial assumptions and uncertainty log", "Named technical owner and review route"],
+    documents: ["Research question and intended application", "Literature review and systematic check of existing public information to see whether an invention, idea, or technical feature is already known", "Proof written down that explains why we think the new idea can work.", "Initial assumptions and uncertainty log", "Named technical owner and review route"],
     milestones: ["Independent review confirms the principle is plausible", "Critical unknowns are ranked", "A testable technology concept is framed"],
     pitfalls: ["Treating an interesting observation as a defined technology", "Skipping systematic check of existing public information to see whether an invention, idea, or technical feature is already known ", "Hiding uncertainty behind a precise maturity claim"],
     exit: "A documented principle, a credible application hypothesis and a defined path to formulate the technology concept."
